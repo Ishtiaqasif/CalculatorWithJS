@@ -1,0 +1,71 @@
+body{
+    margin-top: 250px;
+    background-color:gainsboro;
+    height: max-content;
+    width: max-content;
+    margin: auto;
+}
+.main{
+    margin-top: 25%;
+    background-color: #1E1E1E;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.monitor{
+    background-color: #333333;
+    margin: 5px 0 0 0;
+    width: 294px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-size: x-large;
+    text-align: right;
+    transition-duration: .5s;
+}
+.buttons{
+    margin: 2px;
+}
+table{
+    margin-top: 32px;
+    width: 296px;
+    height: 357px;
+}
+.button {
+ width: 74px;
+ background-color: #333333;
+ margin: 2%;
+ font-size: 30px;
+ color: white;
+ position: relative;
+ transition-duration: .4s;
+ overflow: hidden;
+ cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: yellow;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.5s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+@font-face {
+    font-family: custom;
+    src: url(assets/fonts/Cuprum/);
+  }
+  
