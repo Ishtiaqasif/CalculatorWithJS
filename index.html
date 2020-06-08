@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
+
+    <script src="/assets/jQuery/jQuery-3.4.1.js"></script>
+    <script src="/assets/bootstrap/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
     <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <div class="main">
-        <div id="display">
-            <input class="monitor" type="text" id="monitor" readonly>
-        </div>
-        <div class="buttons">
-            <table id="tableOfbuttons">
-                <tr>
-                    <td class = "button "type="button" value="C" onclick="removeAllDigits('C')" style="color: orangered;">C</td>
-                    <td class = "button "type="button" value="<" onclick="removeADigit('<')"><</td>
-                    <td class = "button "type="button" value="%" onclick="addDigit('%')">%</td>
-                    <td class = "button "type="button" value="/" onclick="addDigit('/')">/</td>
-                    
-                </tr>
-                <tr>
-                    <td class = "button "type="button" value="1" onclick="addDigit(1)">1</td>
-                    <td class = "button "type="button" value="2" onclick="addDigit(2)">2</td>
-                    <td class = "button "type="button" value="3" onclick="addDigit(3)">3</td>
-                    <td class = "button "type="button" value="*" onclick="addDigit('*')">*</td>
-                </tr>
-                <tr>
-                    <td class = "button "type="button" value="4" onclick="addDigit(4)">4</td>
-                    <td class = "button "type="button" value="5" onclick="addDigit(5)">5</td>
-                    <td class = "button "type="button" value="6" onclick="addDigit(6)">6</td>
-                    <td class = "button "type="button" value="-" onclick="addDigit('-')">-</td>
-                </tr>
-                <tr>
-                    <td class = "button "type="button" value="7" onclick="addDigit(7)">7</td>
-                    <td class = "button "type="button" value="8" onclick="addDigit(8)">8</td>
-                    <td class = "button "type="button" value="9" onclick="addDigit(9)">9</td>
-                    <td class = "button "type="button" value="+" onclick="addDigit('+')">+</td>
-                </tr>
-                <tr>
-                    <td class = "button "type="button" value="." onclick="addDigit('.')">.</td>
-                    <td class = "button "type="button" value="0" onclick="addDigit('0')">0</td>
-                    <td colspan="2" class = "button "type="button" value="=" onclick="evaluateExp()" style="color:greenyellow; font-weight: bold;">=</td>
-                </tr>
-            </table>
-        </div>
+    <div class="container">
+        <div class="row">
+              <div class="col-md-6">
+                <div class="main">
+                    <div id="display">
+                        <input class="monitor" type="text" id="monitor" readonly>
+                    </div>
+                    <div class="buttons">
+                        <table id="tableOfbuttons">
+                            <tr>
+                                <td class="button" type="button" value="AC" onclick="removeAllDigits('AC')" style="color: orangered;">AC</td>
+                                <td class="button" type="button" value="C" onclick="removeADigit('<')">C</td>
+                                <td class="button" type="button" value="%" onclick="addDigit('%')">%</td>
+                                <td class="button" type="button" value="/" onclick="addDigit('/')">/</td>
+        
+                            </tr>
+                            <tr>
+                                <td class="button" type="button" value="1" onclick="addDigit(1)">1</td>
+                                <td class="button" type="button" value="2" onclick="addDigit(2)">2</td>
+                                <td class="button" type="button" value="3" onclick="addDigit(3)">3</td>
+                                <td class="button" type="button" value="*" onclick="addDigit('*')">*</td>
+                            </tr>
+                            <tr>
+                                <td class="button" type="button" value="4" onclick="addDigit(4)">4</td>
+                                <td class="button" type="button" value="5" onclick="addDigit(5)">5</td>
+                                <td class="button" type="button" value="6" onclick="addDigit(6)">6</td>
+                                <td class="button" type="button" value="-" onclick="addDigit('-')">-</td>
+                            </tr>
+                            <tr>
+                                <td class="button" type="button" value="7" onclick="addDigit(7)">7</td>
+                                <td class="button" type="button" value="8" onclick="addDigit(8)">8</td>
+                                <td class="button" type="button" value="9" onclick="addDigit(9)">9</td>
+                                <td class="button" type="button" value="+" onclick="addDigit('+')">+</td>
+                            </tr>
+                            <tr>
+                                <td class="button" type="button" value="." onclick="addDigit('.')">.</td>
+                                <td class="button" type="button" value="0" onclick="addDigit('0')">0</td>
+                                <td colspan="2" class="button " type="button" value="=" onclick="evaluateExp()"
+                                    style="color:greenyellow; font-weight: bold;">=</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+          </div>
+        
     </div>
 </body>
+
 </html>
