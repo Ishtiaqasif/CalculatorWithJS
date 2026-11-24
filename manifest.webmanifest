@@ -1,0 +1,19 @@
+{
+    "name": "Calculator",
+    "short_name": "Calculator",
+    "description": "A fast, responsive calculator that works on any device.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#0b0d11",
+    "theme_color": "#0b0d11",
+    "icons": [
+        {
+            "src": "assets/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
